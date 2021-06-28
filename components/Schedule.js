@@ -1,5 +1,4 @@
 function Schedule(game) {
-  console.log(game);
   return (
     <div className="flex flex-col  bg-blue-50 shadow-2xl max-w-md">
       <div className="inline-flex">

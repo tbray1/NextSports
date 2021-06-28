@@ -5,4 +5,7 @@ module.exports = {
   env: {
     API_KEY: "40130162",
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };

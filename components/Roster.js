@@ -1,13 +1,19 @@
-import { forwardRef } from "react";
 import Image from "next/image";
-const Roster = forwardRef(({ player }, ref) => {
-  console.log(player);
+import React from "react";
+const Roster = React.forwardRef(({ result }, ref) => {
   return (
     <div
       ref={ref}
       className="group cursor-pointer transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50 p-10"
     >
-      <Image src={player.strThumb || "/default.png"} alt="" />
+      <Image
+        layout="responsive"
+        src={player.strThumb || "/default.png"}
+        alt=""
+        height={200}
+        width={200}
+        quality={100}
+      />
       <div className="p-2">
         <p className="truncate max-w-md">{player.strPosition}</p>
         <h2 className="mt-1 text-2xl  text-red-500 transition-all duration-100 ease-in-out group-hover:font-bold">
@@ -18,4 +24,4 @@ const Roster = forwardRef(({ player }, ref) => {
   );
 });
 
-export default Roster;
+export default React.forwardRef(Roster);

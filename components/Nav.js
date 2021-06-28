@@ -8,7 +8,7 @@ function Nav() {
   return (
     <nav>
       <div className="flex px-10 sm:px-20 text-2xl whitespace-nowrap space-x-10 sm:space-x-20 bg-black">
-        <Link href="/">
+        <Link href="/" passHref={false}>
           <h1 className="text-3xl text-red-500 font-extrabold cursor-pointer">
             NextSports{" "}
           </h1>

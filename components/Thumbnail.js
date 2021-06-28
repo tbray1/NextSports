@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { forwardRef } from "react";
+import React from "react";
 import Link from "next/link";
-const Thumbnail = forwardRef(({ result }, ref) => {
+const Thumbnail = React.forwardRef(({ result }, ref) => {
   return (
     <Link href={`/team/${result.idTeam}`}>
       <div

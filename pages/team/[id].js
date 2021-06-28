@@ -22,7 +22,7 @@ function TeamPage({ teamDetail, teamEvents, nextEvents, playerDetail }) {
             <Schedule key={game.idEvent} game={game} />
           ))}
         </div>
-        <div className=" container ml-2 ">
+        <div className=" container mx-auto sm:ml-20 md:ml-40 lg:ml-60 ">
           <h1 className="text-4xl px-4 font-bold pt-10 pb-2 pl-2">
             Upcoming Games
           </h1>

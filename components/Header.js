@@ -1,17 +1,15 @@
+import Image from "next/image";
+
 function Header(teamDetail) {
-  console.log(teamDetail);
   return (
-    <div>
-      <header>
-        <h1 className="text-center text-5xl font-extrabold relative">
-          <img
-            className="w-32 mx-auto"
-            src={teamDetail.teamDetail.strTeamBadge}
-            alt=""
-          />
-          {teamDetail.teamDetail.strTeam}
-        </h1>
-      </header>
+    <div className=" flex justify-center text-5xl font-extrabold  ">
+      <Image
+        src={teamDetail.teamDetail.strTeamBadge}
+        alt=""
+        width={100}
+        height={100}
+      />
+      <h1 className="pt-10">{teamDetail.teamDetail.strTeam}</h1>
     </div>
   );
 }
