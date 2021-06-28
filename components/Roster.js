@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-const Roster = React.forwardRef(({ result }, ref) => {
+const Roster = React.forwardRef(({ player }, ref) => {
   return (
     <div
       ref={ref}
@@ -24,4 +24,4 @@ const Roster = React.forwardRef(({ result }, ref) => {
   );
 });
 
-export default React.forwardRef(Roster);
+export default Roster;
