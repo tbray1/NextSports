@@ -18,10 +18,11 @@ export default function Home({ results }) {
 export async function getServerSideProps(context) {
   const sport = context.query.l;
   const request = await fetch(
-    `https://www.thesportsdb.com/api/v1/json/1${
-      requests[sport]?.url || requests.fetchNFL.url
+    `https://www.thesportsdb.com/api/v1/json/2${
+      requests[sport]?.url || requests.fetchMLB.url
     }`
   ).then((res) => res.json());
+  console.log("Hello");
   const teams = JSON.parse(JSON.stringify(request));
   return {
     props: {

@@ -7,7 +7,7 @@ function Nav() {
 
   return (
     <nav>
-      <div className="flex px-10  text-2xl  space-x-10 min-w-max  bg-black">
+      <div className="text-2xl flex  space-x-10 min-w-max  bg-black">
         <Link href="/" passHref={false}>
           <h1 className="text-3xl text-red-500 font-extrabold cursor-pointer">
             NextSports{" "}

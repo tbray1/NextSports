@@ -1,6 +1,6 @@
 function Schedule(game) {
   return (
-    <div className="flex flex-col  bg-blue-50 shadow-2xl max-w-md">
+    <div className="flex flex-col  bg-blue-50 shadow-2xl">
       <div className="inline-flex">
         <p className=" text-xs  font-extrabold pl-2">{game.game.dateEvent}</p>
         <p className=" text-xs  font-extrabold pl-2 ml-auto pr-2">Score</p>
